@@ -154,16 +154,23 @@
 \subheading{Probabilistic Search Program}{}{}{}
 	\vspace{-15pt}	
 	\begin{adjustwidth}{6pt}{}
-	Program written in \textbf{Python} that uses a belief state matrix and Bayesian formulas to find a particular cell in a grid, where mobility is limited to orthogonal movement.
+	Program written in \textbf{Python} that uses a belief state matrix and Bayesian formulas to find a particular cell in a grid, despite a ranging likelihood of false-positives.
 	\end{adjustwidth}
 	\begin{achievements}
-		\item 
+		\item Decreased average search time by replacing a priority-queue-based movement system with a matrix informed by a changing belief state and the program's current position
+		\item Increased likelihood of a hit when the program is searching the correct cell by applying the likelihood of a false negative to Bayes' Theorem
 	\end{achievements}
+\subheading{Cache Simulator}{}{}{}
+	\vspace{-15pt}
+	\begin{adjustwidth}{6pt}{}
+	\textbf{C} program that efficiently parses pseudo-memory text files, utilizing bit indexing, locality algorithms, and masking techniques.
+	\end{adjustwidth}
+\vspace*{4pt}
 	
 %-----SKILLS----------------------
 \header{Skills}
 	\begin{achievements}
-		\item{\bf Programming Languages:} Proficient in Java and Python; Familiar with C, JavaScript, HTML/CSS, R, and Lisp (Scheme)
+		\item{\bf Programming Languages:} Proficient in Java and Python; Familiar with C, PHP, JavaScript, HTML/CSS, R, and Lisp (Scheme)
 		\item{\bf Technology and Software:} Git, Node.js, WordPress, Bootstrap, Unity, LibGDX, \LaTeX, MongoDB
 	\end{achievements}
 
