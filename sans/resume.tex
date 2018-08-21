@@ -144,15 +144,12 @@
 \subheading{Probabilistic Search Program}{}{}{}
 	\vspace{-15pt}	
 	\begin{adjustwidth}{-10pt}{}
-	\textbf{Python} program that searches a matrix for a specific cell, despite a ranging likelihood of false-negatives for each cell
-
-	
-	program that finds a particular cell in a grid, despite a ranging likelihood of false-positives for each cell and being limited to orthogonal movement
+	\textbf{Python} program that searches a matrix for a specific cell, despite incurring a cost for orthogonal movement and a ranging likelihood of false-negatives for each cell
 	\end{adjustwidth}
 	\begin{achievements}
 		\item Created a ``confidence matrix'' by applying Bayes' Theorem to the false-negative rate of any visited cell
 		\vspace{4pt}		
-		\item Decreased average search time by replacing a priority queue based searth optimization with a ``cost-benefit matrix,'' informed by the confidence matrix and the cost to search any given cell
+		\item Decreased average search time by replacing a priority queue based search optimization algorithm with a ``cost-benefit matrix,'' informed by the confidence matrix and the cost to search any given cell
 	\end{achievements}
 	
 \subheading{Cache Simulator}{}{}{}
