@@ -135,20 +135,24 @@
 \subheading{Neutral Network Colorizer}{}{}{}
 	\vspace{-15pt}
 	\begin{adjustwidth}{-10pt}{}
-	\textbf{Python} program that attempts to colorized black and white images with a neural network, trained with a variety of color photos.
+	\textbf{Python} program that attempts to colorized black and white images with a neural network
 	\end{adjustwidth}
 	\begin{achievements}
-		\item Outlined a more realistic goal for the program to achieve - a focus on beach landscape colorization - and accordingly trained the network on a more specific data set. 
+		\item Outlined a more realistic goal for the program to achieve and accordingly trained the network on a more specific data set. 
 	\end{achievements}
 	
 \subheading{Probabilistic Search Program}{}{}{}
 	\vspace{-15pt}	
 	\begin{adjustwidth}{-10pt}{}
-	\textbf{Python} program that finds a particular cell in a grid, despite a ranging likelihood of false-positives for each cell and being limited to orthogonal movement
+	\textbf{Python} program that searches a matrix for a specific cell, despite a ranging likelihood of false-negatives for each cell
+
+	
+	program that finds a particular cell in a grid, despite a ranging likelihood of false-positives for each cell and being limited to orthogonal movement
 	\end{adjustwidth}
 	\begin{achievements}
-		\item Decreased average search time by replacing a priority-queue-based movement system with a matrix informed by a changing belief state and the program's current \textquotedblleft search position\textquotedblright
-		\item Increased likelihood of a hit when the program is searching the correct cell by applying the likelihood of a false negative to Bayes' Theorem
+		\item Created a ``confidence matrix'' by applying Bayes' Theorem to the false-negative rate of any visited cell
+		\vspace{4pt}		
+		\item Decreased average search time by replacing a priority queue based searth optimization with a ``cost-benefit matrix,'' informed by the confidence matrix and the cost to search any given cell
 	\end{achievements}
 	
 \subheading{Cache Simulator}{}{}{}
