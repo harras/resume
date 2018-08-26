@@ -1,11 +1,11 @@
 %--------------------------------
-% Resume in LaTeX
+% RESUME IN LaTeX
 % Author: Nicholas Harras
 % Framework based on Ben Nissan's (https://www.bennissan.github.io/),
 % and Sourabh Bajaj's, who is a very famous and talented programmer.
 %--------------------------------
 
-%
+% PACKAGES
 \documentclass[12pt]{article}
 \usepackage{fullpage}
 \usepackage{amsmath}
@@ -16,7 +16,7 @@
 \usepackage{lipsum}
 \usepackage{changepage}
 
-% Adjust Margins
+% ADJUST MARGINS
 \setlength{\voffset}{-0.2in}
 \setlength{\hoffset}{-0.4in}
 \setlength{\textheight}{710pt}
@@ -24,33 +24,27 @@
 \pagestyle{empty}
 \raggedright
 
-% Custom Commands
+% CUSTOM COMMANDS
+
+% Helper functions
 \newcommand{\area}[2]{
 	\vspace*{-9pt} 
 	\begin{verse}\textbf{#1}   #2 \end{verse}
   	\vspace*{-8pt}
-}  	
-\newcommand{\lineunder}{
-	\vspace*{-8pt} \\ 
-	\hspace*{-18pt} 
-	\hrulefill \\
-}
-\newcommand{\header}[1]{
-	\vspace*{12pt}
-	{\hspace*{-14pt}\vspace*{6pt} #1} %removed small caps 
-	% replace "#1" with "\textbf{#1} for smallcaps
-	\vspace*{-6pt} 
-	\lineunder
 }
 \newcommand{\fillpullright}[1]{
 	\hfill 
 	\hfill 
 	\textcolor{Gray}{(#1)}
 }
-\newcommand{\employer}[4]{
-	{ \textbf{#1} #2 \fillpullright{#4}\\
-    \textit{\fontsize{10}{12}\selectfont #3}\\  }
+\newcommand{\mailto}[1]{
+	\href{mailto:#1}{#1}
 }
+\newcommand{\reference}[4]{
+  	#1 & #2, #3 & \textit{\mailto{#4}}\\
+}
+
+% Page Heading (Name/Contact Info)
 \newcommand{\contact}[2]{
 	\vspace*{-8pt}
 	\begin{center}
@@ -59,31 +53,41 @@
 	\end{center}
 	\vspace*{-12pt}
 }
-\newenvironment{achievements}{
-\begin{adjustwidth}{-10pt}{}
-  \begin{list}{$\bullet$}{
-  	\topsep 0pt \itemsep -4pt}}
-  	{\vspace*{2pt}\end{list}
-\end{adjustwidth}
+
+% Headers
+\newcommand{\header}[1]{
+	\vspace*{12pt} % increase to create more whitespace
+	{\hspace*{-14pt}\vspace*{6pt} #1}
+	\vspace*{-6pt} 
+	\lineunder
 }
-\newcommand{\schoolwithcourses}[5]{
-  	\textbf{#1} #2 $\bullet$ #3 #4 \fillpullright{#5} \\ 
-	\vspace*{8pt}
+
+% Underline under each category  	
+\newcommand{\lineunder}{
+	\vspace*{-8pt} \\ 
+	\hspace*{-18pt} 
+	\hrulefill \\
 }
+
+% School
 \newcommand{\school}[3]{
  	\textbf{#1} #2 \fillpullright{#3}\\
   	\vspace*{8pt}
 }
-\newcommand{\mailto}[1]{
-	\href{mailto:#1}{#1}
-}	
-\newcommand{\reference}[4]{
-  	#1 & #2, #3 & \textit{\mailto{#4}}\\
+
+% Coursework info
+\newcommand{\schoolwithcourses}[5]{
+  	\textbf{#1} #2 $\bullet$ #3 #4 \fillpullright{#5} \\ 
+	\vspace*{8pt}
 }
-\def\cpp{
-	{\hspace{-0.25em}C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny		\bf ++}}}
-	\def\lildot{$\cdot$
+
+% Employer
+\newcommand{\employer}[4]{
+	{ \textbf{#1} #2 \fillpullright{#4}\\
+    \textit{\fontsize{10}{12}\selectfont #3}\\  }
 }
+
+% Subheadings
 \newcommand{\subheading}[4]{
  	\vspace{5pt}
     	\begin{tabular*}{1.01\textwidth}
@@ -94,9 +98,26 @@
     \vspace{-4pt}
 }
 
+% Bodies after subheadings
+\newenvironment{achievements}{
+\begin{adjustwidth}{-10pt}{}
+  \begin{list}{$\bullet$}{
+  	\topsep 0pt \itemsep -4pt}}
+  	{\vspace*{2pt}\end{list}
+\end{adjustwidth}
+}
+
+% Custom "C++" look
+\def\cpp{
+	{\hspace{-0.25em}C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny		\bf ++}}}
+	\def\lildot{$\cdot$
+}
+
+
 \renewcommand{\familydefault}{\sfdefault} % comment out to add serifs
 
 
+%------START OF DOCUMENT---------
 \begin{document}
 
 \small
@@ -131,16 +152,6 @@
 
 %-----PROJECTS--------------------
 \header{PROJECTS}
-
-\subheading{Neutral Network Colorizer}{}{}{}
-	\vspace{-15pt}
-	\begin{adjustwidth}{-10pt}{}
-	\textbf{Python} program that attempts to colorize black and white images with a neural network
-	\end{adjustwidth}
-	\begin{achievements}
-		\item Outlined a more realistic goal for the program to achieve and accordingly trained the network on a more specific data set. 
-	\end{achievements}
-	
 \subheading{Probabilistic Search Program}{}{}{}
 	\vspace{-15pt}	
 	\begin{adjustwidth}{-10pt}{}
@@ -151,13 +162,24 @@
 		\vspace{4pt}		
 		\item Decreased average search time by replacing a priority queue based search optimization algorithm with a ``cost-benefit matrix,'' informed by the confidence matrix and the cost to search any given cell
 	\end{achievements}
+
+\subheading{Neutral Network Colorizer}{}{}{}
+	\vspace{-15pt}
+	\begin{adjustwidth}{-10pt}{}
+	\textbf{Python} program that attempts to colorize black and white images with a neural network
+	\end{adjustwidth}
+	\begin{achievements}
+		\item Outlined a more realistic goal for the program to achieve and accordingly trained the network on a more specific data set. 
+	\end{achievements}
 	
 \subheading{Cache Simulator}{}{}{}
 	\vspace{-15pt}
 	\begin{adjustwidth}{-10pt}{}
-	\textbf{C} program that efficiently parses pseudo-memory text files, utilizing bit indexing, locality algorithms, and masking techniques
+	\textbf{C} program that simulates cache locality functions by reading and writing pseudo-memory text files
 	\end{adjustwidth}
-\vspace*{4pt}
+	\begin{achievements}
+		\item Greatly reduced runtime by switching to bitwise operations for memory address parsing, notably with masking techniques 
+	\end{achievements}
 
 
 %-----CAMPUS ACTIVITIES-----------
