@@ -1,0 +1,48 @@
+NICHOLAS HARRAS
+201-317-2212 | nickharras1@gmail.com | https://github.com/harras
+
+EDUCATION
+Rutgers University	New Brunswick, NJ
+B.S. in Computer Science	August 2018
+Related Coursework: Linear Optimization, Computer Security, Databases, Internet Technology, Systems Programming, Algorithms, Principles of Programming Languages, Intro to A.I., Computer Architecture, Discrete Structures I/II, Linear Algebra, Calculus I/II, Data Structures
+	
+PROJECTS
+OpenSSL Message Board Project
+Client and server programs written in Python designed to emulated how TLS encryption/decryption works. Also quickly models good password storing practices.
+  + Utilizes the SSL, Socket, Threading, and HashLib Python modules
+  + Sets up a secure connection before encrypting/decrypting any packets via RSA keys and certificates
+  + Tests user credentials against salted password hashes
+	
+Protostar Exploits Assignment
+Practiced finding and exploiting insecure C functions using Python scripts and GDB
+  + Worked in a virtual Linux environment in VirtualBox
+  + Disassembled compiled C programs in GDB
+  + Practiced writing simple scripts to help manipulate memory
+	 
+"BuyMe Shop" Databases Project
+EBay-inspired database model, built with an AWS MySQL server and JSP webpages
+  + Modeled a database schema that suited our given needs, then built it in MySQL, hosted on AWS
+  + Worked with HTTP methods so webpages could communicate with each other 
+  + Ran various QA tests and bugfixes against user inputs
+	 
+EXPERIENCE
+SEMGeeks	Belmar, NJ
+Web Development Intern	September - December 2017
+  + Worked closely with web developers and designers to help create websites for small businesses
+  + Utilized WordPress and HTML/CSS in a professional setting
+  + Researched malicious PHP scripts that had stolen client information using steganography
+	
+CAMPUS ACTIVITIES
+Undergraduate Student Alliance of Computer Scientists	Piscataway, NJ
+Mentor/Member	September 2016 - June 2018
+  + Taught a group of four CS students the basics of Bash, Git, as well as data structures and other CS concepts
+  + Offered guidance to CS students with respect to clubs to join, topics to explore, textbooks to read, etc.
+  + Assisted computer science first-years with their coursework
+	
+HackRU	Piscataway, NJ
+Volunteer	May 2017
+  + Assisted competitors throughout the event as a technical advisor, specifically regarding Python and Java
+	
+SKILLS
+Programming Languages: Proficient in Python, C, and Java; Familiar with , JavaScript, and Lisp (Scheme)
+Technology and Software: Git, GDB, VIM, Nmap, Netcat, WireShark, VirtualBox, MySQL, JSP, AWS (RDS and EC2), WordPress, HTML/CSS, LaTeX
