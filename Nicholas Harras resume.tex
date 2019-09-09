@@ -135,10 +135,10 @@
 	{National Oceanic and Atmospheric Administration}{Princeton, NJ}
 	{Computer Operator}{June 2019 - present}
 	\begin{achievements}
-		\item Utilizing \textbf{Slurm} to maintain a variety of on and off-site HPCs
-		\item Wrote \textbf{Python} scripts to automate maintenance tasks
-		\item Developed \textbf{Python} scripts to perpetually feed HPC statistics an \textbf{InfluxDB} database, in order to represent the data more easily with \textbf{Grafana}
-		\item Gained experience working in a Help Desk ticketing system
+		\item Utilizing \textbf{Slurm} and other command line tools to maintain various HPC systems scientists at the Geophysical Fluid Dynamics Lab rely on for their weather modeling
+		\item Developing \textbf{Python} and \textbf{tcsh} scripts to automate various maintenance tasks
+		\item Working with a Help Desk ticketing system to assist scientists, often with \textbf{SSH} and \textbf{X2Go} connections, \textbf{Slurm} errors, and compiler issues
+		
 	\end{achievements}
 	
 \subheading
@@ -155,7 +155,7 @@
 \header{SKILLS}
 	\begin{achievements}
 		\item{\bf Programming Languages:} Proficient in Python, C, and Java; Familiar with \cpp, JavaScript, and Lisp (Scheme)
-		\item{\bf Technology and Software:} Git, GDB, VIM, Nmap, Netcat, WireShark, VirtualBox, MySQL, JSP, AWS (RDS and EC2), WordPress, HTML/CSS, \LaTeX
+		\item{\bf Technology and Software:} Vim, Git, bash, tcsh, Nmap, WireShark, VirtualBox, InfluxDB, MySQL, JSP, AWS (RDS and EC2), HTML/CSS \LaTeX
 		\item{\bf Clearance:} Public Trust
 	\end{achievements}
 
@@ -174,23 +174,38 @@
 %		\item Here
 %	\end{achievements} 
 
-\subheading{Splunk Virtual Machine Lab (in progress)}{}{}{}
+\subheading{HPC Monitoring Dashboard}{}{}{}
 	\vspace{-15pt}
-	\begin{adjustwidth}{10pt}{}
-	\textbf{Oracle VM VirtualBox} network lab being built to learn the network requirements for setting up a SEIM, as well as the basics of practically using \textbf{Splunk}.
-	\end{adjustwidth} 
-
-\subheading{OpenSSL Message Board Project}{}{}{}
-	\vspace{-15pt}
-	\begin{adjustwidth}{10pt}{}
-	Client and server programs written in \textbf{Python} designed to emulated how TLS encryption/decryption works. Also quickly models good password storing practices.
+	\begin{adjustwidth}{-10pt}{}
+	\textbf{Grafana} metrics dashboard for various statistics pertinent to monitoring GFDL/NOAA HPCs, utilizing an \textbf{InfluxDB} database and \textbf{Python}
 	\end{adjustwidth}
+	\begin{achievements}
+		\item Developing \textbf{Python} wrappers of \textbf{Slurm} and system functions to constantly update an \textbf{InfluxDB} database
+		\item Writing software as part of a small team, prioritizing portability and readability
+		\item Working with other operators to find the most useful data representations for their needs
+	\end{achievements}
 
 \subheading{AWS Databases Project}{}{}{}
 	\vspace{-15pt}
-	\begin{adjustwidth}{10pt}{}
+	\begin{adjustwidth}{-10pt}{}
 	eBay-inspired database model, built with an \textbf{AWS MySQL} server and \textbf{JSP} webpages
 	\end{adjustwidth}
+	\begin{achievements}
+		\item Gained experience working with the \textbf{AWS} platform, hosted the database on \textbf{RDS} and the front-end on \textbf{EC2}
+		\item Modeled a relational database out before implementation, learned about database best practices
+		\item Built the front-end using \textbf{JSP} to manage POST and GET requests, gained experience structuring \textbf{HTTP} requests
+	\end{achievements}
+	
+\subheading{Dungeons \& Dragons Supplement}{}{}{}
+	\vspace{-15pt}
+	\begin{adjustwidth}{-10pt}{}
+	A command line tool written in \textbf{Python} for generating a randomly generated game environment and for keeping track of player and NPC locations. The premise of this setting involved a series of magical doors which could randomly rearrange themselves.
+	\end{adjustwidth}
+	\begin{achievements}
+		\item Modeled my setting concept out as a graph and approached a software solution using discrete math
+		\item Implemented various additions over time, such as player and NPC mobility and save functionality
+		\item Optimized map generation by cloning a master dictionary to an "in use" set of map data, and randomly reorganizing that one key at a time.
+	\end{achievements} 
 
 
 %-----EDUCATION------------------
@@ -205,23 +220,23 @@
 
 
 %-----CAMPUS ACTIVITIES-----------
-\header{CAMPUS ACTIVITIES}
+%\header{CAMPUS ACTIVITIES}
 
-\subheading
-	{Undergraduate Student Alliance of Computer Scientists}{Piscataway, NJ}
-	{Mentor/Member}{September 2016 - June 2018}
-	\begin{achievements}
-		\item Taught a group of four CS students the basics of \textbf{Bash}, \textbf{Git}, as well as data structures and other CS concepts
-		\item Offered guidance to CS students with respect to clubs to join, topics to explore, textbooks to read, etc.
-		\item Assisted computer science first-years with their coursework
-	\end{achievements}
+%\subheading
+%	{Undergraduate Student Alliance of Computer Scientists}{Piscataway, NJ}
+%	{Mentor/Member}{September 2016 - June 2018}
+%	\begin{achievements}
+%		\item Taught a group of four CS students the basics of \textbf{Bash}, \textbf{Git}, as well as data structures and other CS concepts
+%		\item Offered guidance to CS students with respect to clubs to join, topics to explore, textbooks to read, etc.
+%		\item Assisted computer science first-years with their coursework
+%	\end{achievements}
 	
-\subheading
-	{HackRU}{Piscataway, NJ}
-	{Volunteer}{May 2017}
-	\begin{achievements}
-		\item Assisted competitors throughout the event as a technical advisor, specifically regarding \textbf{Python} and \textbf{Java}
-	\end{achievements}
+%\subheading
+%	{HackRU}{Piscataway, NJ}
+%	{Volunteer}{May 2017}
+%	\begin{achievements}
+%		\item Assisted competitors throughout the event as a technical advisor, specifically regarding \textbf{Python} and \textbf{Java}
+%	\end{achievements}
 
 
 \end{document}
