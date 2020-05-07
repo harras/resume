@@ -128,18 +128,20 @@
 \contact{\huge{N}\LARGE{ICHOLAS} \huge{H}\LARGE{ARRAS}}{201-317-2212 $\bullet$ \mailto{nickharras1@gmail.com} $\bullet$ \href{https://www.github.com/harras}{linkedin.com/in/nicholas-harras/}}
 
 %-----SKILLS AND CREDENTIALS------
+\vspace{-8pt}
 \header{SKILLS}
 	\begin{achievements}
 	% 	\item{\bf :}
 		\item{\bf Programming and Scripting:} Python, C, Java, Perl, JavaScript, PHP, bash, tcsh
 		\item{\bf Databases and Web Dev:} SQLite, MySQL, InfluxDB, Grafana, WordPress, AWS (RDS and EC2)
-		\item{\bf IT and Workflow Tools:} Service Desk, OTRS, Slurm, git, vim, cron 
-		\item{\bf Network and Security:} Nmap, Nessus, WireShark, Burp Suite, VirtualBox, OpenVPN, iptables, ssh, X2Go
+		\item{\bf IT and Workflow Tools:} Service Desk, OTRS, Slurm, git, GitLab, vim, cron 
+		\item{\bf Network and Security:} Nmap, Nessus, WireShark, Burp Suite, VirtualBox, OpenVPN, ssh, X2Go
 		\item{\bf Operating Systems:} Ubuntu 18.04, RHEL 7, OpenSUSE, Windows 10
 		\item{\bf Clearance:} Public Trust
 	\end{achievements}
 
 %-----EXPERIENCE------------------
+\vspace{-8pt}
 \header{EXPERIENCE}
 
 \subheading
@@ -159,11 +161,12 @@
 	{Web Development Intern}{September - December 2017}
 	\begin{achievements}
 		\item Worked closely with web developers and designers to help create websites for small businesses
-		\item Utilized \textbf{WordPress} and its various tools for content management across 12 or so projects
+		\item Utilized \textbf{WordPress} and its various tools for content management across about 12 projects
 	\end{achievements}
 
 
 %-----PROJECTS--------------------
+\vspace{-8pt}
 \header{PROJECTS}
 
 %\subheading{}{}{}{}
@@ -177,16 +180,27 @@
 %		\item Here
 %	\end{achievements} 
 
-\subheading{Operators' Log Migration (in progress)}{}{}{}
+\subheading{Operators' Log Migration}{}{}{}
 	\vspace{-15pt}
 	\begin{adjustwidth}{-10pt}{}
-	Long term project with the goal of moving 30 years of Operators' log from text files to a relational database, utilizing \textbf{Python}, \textbf{SQLite}, and \textbf{MySQL}
+	Long term project with the goal of moving 30 years of Operators' log from text files to a relational database, utilizing \textbf{Python}, \textbf{SQLite} for testing, and to ultimately write to a \textbf{MySQL} database
 	\end{adjustwidth}
 	\begin{achievements}
-		\item Developed software to autonomously navigate a section of a filesystem.
-		\item Utilized input sanitation, capable to parsing a wide variety of logging styles over the course of the last 30 years
-		\item Ran a large amount of tests and proofs-of-concepts, stress-tested and quality controlled utilizing \textbf{SQLite} database files, as to not overburden our systems before migration is to take place.
+		\item Tested a wide variety of methods to iterate through and parse 200,000 text files, resulting in a final algorithm with a runtime 40\% faster than the original implementation
+		\item Sanitized data and implemented quality controls to ensure no data loss
+		\item Carefully tested only portions of the logs before determining that we were ready to migrate the logs in it's entirety
 	\end{achievements} 
+	
+\subheading{HPC Charge Code Calculator}{}{}{}
+	\vspace{-15pt}
+	\begin{adjustwidth}{-10pt}{}
+	\textbf{Python} command line tool written to expedite the process of issuing charge codes to HPC systems according to downtime.
+	\end{adjustwidth}
+	\begin{achievements}
+		\item Algorithmically designed to handle any and all possible charge code combinations
+		\item Addressed a real workflow bottleneck, reduced time spent calculating charge codes to near-instanteous
+		\item Began as a personal project, but was adopted by the other operators, and became part of our \textbf{GitLab} as an ongoing, official project
+	\end{achievements}
 
 \subheading{HPC Monitoring Dashboard}{}{}{}
 	\vspace{-15pt}
@@ -195,18 +209,20 @@
 	\end{adjustwidth}
 	\begin{achievements}
 		\item Developed \textbf{Python} wrappers of \textbf{Slurm} and system functions to constantly update an \textbf{InfluxDB} database
-		\item Wrote software as part of a small team, prioritizing portability and readability
+		\item Worked with operators to ensure the user experience of the \textbf{Grafana} displays were helpful to their workflow
+		\item Provided reliable uptime logs over time, which proved incredibly helpful for HPC monitoring and troubleshooting, for instance in the event of an outage.
 	\end{achievements}
 
 
 %-----EDUCATION------------------
+\vspace{-8pt}
 \header{EDUCATION}
 
 \subheading
 	{Rutgers University}{New Brunswick, NJ}
 	{B.S. in Computer Science}{September 2014 - August 2018}
 	\begin{achievements}	
-	\item{\bf Related Coursework:} Linear Optimization, Computer Security, Databases, Internet Technology, Systems Programming, Algorithms, Principles of Programming Languages, Intro to A.I., Computer Architecture, Discrete Structures I/II, Linear Algebra, Calculus I/II, Data Structures
+	\item{\bf Related Coursework:} Databases, Internet Technology, Systems Programming, Algorithms, Principles of Programming Languages, Computer Security, Intro to A.I., Computer Architecture, Linear Optimization,   Linear Algebra, Discrete Structures I/II, Calculus I/II, Data Structures
 	\end{achievements}
 
 
