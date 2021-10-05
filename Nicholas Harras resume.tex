@@ -128,17 +128,6 @@
 \contact{\huge{N}\LARGE{ICHOLAS} \huge{H}\LARGE{ARRAS}}{201-317-2212 $\bullet$ \mailto{nickharras1@gmail.com} $\bullet$ \href{https://www.github.com/harras}{linkedin.com/in/nicholas-harras/}}
 
 
-%-----EDUCATION------------------
-\vspace{-8pt}
-\header{EDUCATION}
-
-\subheading
-	{Rutgers University}{New Brunswick, NJ}
-	{B.S. in Computer Science}{September 2014 - August 2018}
-	\begin{achievements}	
-	\item{\bf Related Coursework:} Databases, Internet Technology, Systems Programming, Algorithms, Principles of Programming Languages, Computer Security, Intro to A.I., Computer Architecture, Linear Optimization,   Linear Algebra, Discrete Structures I/II, Calculus I/II, Data Structures
-	\end{achievements}
-
 %-----SKILLS AND CREDENTIALS------
 \vspace{-8pt}
 \header{SKILLS}
@@ -160,10 +149,10 @@
 	{Institute for Genomics and Evolutionary Medicine -- Temple University}{Philadelphia, PA}
 	{IT Support Sepcialist}{September 2020 - present}
 	\begin{achievements}
-		\item Maintaining and administoring every piece of IT equipment across the lap, including about 20 enterprise servers and 100 Windows workstations. 
+		\item Maintaining and administoring every piece of IT equipment across the lap, including about 6 enterprise servers and 100 \textbf{Windows} workstations. 
 		\item Assisting about 30 doctorate and post-doctorate researches with using our technology for their research, including writing \textbf{SLURM} sbatch scripts, deploying \textbf{Ubuntu} workstations, \textbf{Python} environments such as \textbf{Jupyter} and \textbf{Anaconda}
+		\item Responsible for the continuous uptime of a \textbf{SLURM} High Performance Computing cluster, including the capacity to reconfigure the cluster and all its services in case of a crash
 		\item Authoring documentation for systems administration and security policies for all IT infrastructure in the lab
-		\item Performing regular security audits, patches, and re-deployments on IT infrastructure
 	\end{achievements}
 
 \subheading
@@ -183,7 +172,7 @@
 \vspace{-8pt}
 \header{PROJECTS}
 
-%\subheading{}{}{}{}
+%\subheading{Example Text}{}{}{}
 %	\vspace{-15pt}
 %	\begin{adjustwidth}{-10pt}{}
 %	LOREM IPSUM
@@ -194,39 +183,27 @@
 %		\item Here
 %	\end{achievements} 
 	
-\subheading{HPC Charge Code Calculator}{}{}{}
+\subheading{TimeTree 4 Server Deployment}{}{}{}
 	\vspace{-15pt}
 	\begin{adjustwidth}{-10pt}{}
-	\textbf{Python} command line tool written to expedite the process of issuing charge codes to HPC systems according to downtime.
+	Oversaw deployment, auditing, and maintenance for every step of the process for the migration of the evolutionary knowledge-base website timetree.org from a \textbf{Xen} High Availability cluster, to redundant, dedicated servers.
 	\end{adjustwidth}
-	\begin{achievements}
-		\item Algorithmically designed to handle any and all possible charge code combinations
-		\item Addressed a real workflow bottleneck, reduced time spent calculating charge codes to near-instantaneous
-		\item Began as a personal project, but was adopted by the other operators, and became part of our \textbf{GitLab} as an ongoing, official project
+	\begin{achievements}		
+		\item Worked with the site's development team and the vendors we have relationships with to find suitable hardware to host the next interation of the website.
+		\item Physically deployed all of the equipment, and configured all of the systems a secure, public-facing webserver
+		\item Worked closely with the security team to accurately model the attack surface of the server and develop a security policy to adhere to as I work to continuously maintain it
 	\end{achievements}
 
-\subheading{HPC Monitoring Dashboard}{}{}{}
-	\vspace{-15pt}
-	\begin{adjustwidth}{-10pt}{}
-	\textbf{Grafana} metrics dashboard for various statistics pertinent to monitoring GFDL/NOAA HPCs, utilizing an \textbf{InfluxDB} database and \textbf{Python}
-	\end{adjustwidth}
-	\begin{achievements}
-		\item Developed \textbf{Python} wrappers of \textbf{Slurm} and system functions to constantly update an \textbf{InfluxDB} database
-		\item Worked with operators to ensure the user experience of the \textbf{Grafana} displays were helpful to their workflow
-		\item Provided reliable uptime logs over time, which proved incredibly helpful for HPC monitoring and troubleshooting, for instance in the event of an outage.
+%-----EDUCATION------------------
+\vspace{-8pt}
+\header{EDUCATION}
+
+\subheading
+	{Rutgers University}{New Brunswick, NJ}
+	{B.S. in Computer Science}{September 2014 - August 2018}
+	\begin{achievements}	
+	\item{\bf Related Coursework:} Databases, Internet Technology, Systems Programming, Algorithms, Principles of Programming Languages, Computer Security, Intro to A.I., Computer Architecture, Linear Optimization,   Linear Algebra, Discrete Structures I/II, Calculus I/II, Data Structures
 	\end{achievements}
-
-\subheading{Operators' Log Migration}{}{}{}
-	\vspace{-15pt}
-	\begin{adjustwidth}{-10pt}{}
-	Long term project with the goal of moving 30 years of Operators' log from text files to a relational database, utilizing \textbf{Python}, \textbf{SQLite} for testing, and to ultimately write to a \textbf{MySQL} database
-	\end{adjustwidth}
-	\begin{achievements}
-		\item Tested a wide variety of methods to iterate through and parse 200,000 text files, resulting in a final algorithm with a runtime 40\% faster than the original implementation
-		\item Sanitized data and implemented quality controls to ensure no data loss
-		\item Carefully tested only portions of the logs before determining that we were ready to migrate the logs in its entirety
-	\end{achievements} 
-
 
 %-----CAMPUS ACTIVITIES-----------
 %\header{CAMPUS ACTIVITIES}
