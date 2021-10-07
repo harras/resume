@@ -35,9 +35,9 @@ PROJECTS
 ========
 TIMETREE 4 SERVER DEPLOYMENT   
 Oversaw deployment, auditing, and maintenance for every step of the process for the migration of the evolutionary knowledge-base website timetree.org from a XEN High Availability cluster, to redundant, dedicated servers.
-  + Worked with the site’s development team and the vendors we have relationships with to find suitable hardware to host the next interation of the website.
+  + Facilitated the exchange of information between the site’s development team and hardware vendors to acquire the machines best suited to host the next interation of the website.
   + Physically deployed all of the equipment, and configured all of the systems a secure, public-facing webserver
-  + Worked closely with the security team to accurately model the attack surface of the server and develop a security policy to adhere to as I work to continuously maintain it
+  + Collaborated closely with the security team to accurately model the attack surface of the server and develop a security policy to adhere to as I work to continuously maintain it
 
 EDUCATION
 =========
