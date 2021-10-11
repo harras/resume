@@ -17,8 +17,8 @@ INSTITUTE FOR GENOMICS AND EVOLUTIONARY MEDICINE – TEMPLE UNIVERSITY
 Philadelphia, PA
 IT Support Sepcialist
 September 2020 - present
-  + Maintaining and administoring every piece of IT equipment across the lap, including about 6 enterprise servers and 100 WINDOWS workstations.
-  + Assisting about 30 doctorate and post-doctorate researches with using our technology for their research, including writing SLURM sbatch scripts, deploying UBUNTU workstations, PYTHON environments such as JUPYTER and ANACONDA
+  + Maintaining and administoring every piece of IT equipment across the lap, including 6 enterprise servers and 100 WINDOWS workstations.
+  + Assisting 30 doctorate and post-doctorate and 40 undergraduate researchers with the use of our technology, including writing SLURM sbatch scripts, deploying UBUNTU workstations, PYTHON environments such as JUPYTER and ANACONDA
   + Responsible for the continuous uptime of a SLURM High Performance Computing cluster, including the capacity to reconfigure the cluster and all its services in case of a crash
   + Authoring documentation for systems administration and security policies for all IT infrastructure in the lab
 
